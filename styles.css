@@ -41,7 +41,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(fonfo/fondo.jpg);
+    background-image: url(fondo/fondo.jpg);
 }
 
 .heart {
