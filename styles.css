@@ -1,0 +1,91 @@
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#yes {
+    width: 100px;
+    height: 50px;
+    background-color: #00a0ff;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+#no {
+    width: 100px;
+    height: 50px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 60%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 38%;
+    color: white;
+}
+
+body {
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.heart {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 150px #f20044;
+    animation: palpitar 0.5s linear infinite alternate;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+@keyframes palpitar {
+    0% {
+        transform: rotate(45deg) scale(1.10);
+    }
+    80% {
+        transform: rotate(45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(45deg) scale(0.8);
+    }
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+}
+
+.heart::after {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+}
